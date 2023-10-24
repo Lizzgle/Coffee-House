@@ -1,0 +1,120 @@
+-- Создание таблицы "User"
+CREATE TABLE Users (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Login          TEXT            NOT NULL UNIQUE,
+    Password       TEXT            NOT NULL,
+    Name           TEXT            NOT NULL UNIQUE,
+    DateOfBirth    TEXT            NOT NULL
+);
+
+-- Создание таблицы "Coupon"
+CREATE TABLE Coupons (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Discount       INTEGER         NOT NULL,
+    DateOfEnd      TEXT            NOT NULL CHECK (DateOfEnd >= DATE('now'))
+);
+
+-- Создание таблицы "Feedback"
+CREATE TABLE Feedbacks (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Date           TEXT            NOT NULL DEFAULT (DATETIME('now')),
+    Rating         INTEGER         NOT NULL,
+    Description    TEXT(255),
+    UserId         INTEGER         REFERENCES Users (Id) ON DELETE SET NULL
+);
+
+-- Создание таблицы "Order"
+CREATE TABLE Orders (
+    Id             INTEGER        PRIMARY KEY AUTOINCREMENT,
+    Date           TIME           NOT NULL DEFAULT (DATETIME('now')),
+    UserId         INTEGER        REFERENCES User(Id) ON DELETE SET NULL
+);
+
+
+-- Создание таблицы "Drink"
+CREATE TABLE Drinks (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Name           TEXT            NOT NULL,
+    Size           TEXT            NOT NULL CHECK (Size IN ('S', 'M', 'L')),
+    Price          REAL            NOT NULL CHECK(Price > 0),
+    RecipeId       INTEGER         REFERENCES Recipe(Id) ON DELETE SET NULL,
+    CategoryId     INTEGER         REFERENCES Category(Id) ON DELETE SET NULL
+);
+-- Создание таблицы "Category"
+CREATE TABLE Categories (
+    Id             INTEGER        PRIMARY KEY AUTOINCREMENT,
+    Name           TEXT           NOT NULL UNIQUE
+);
+
+-- Создание таблицы "Recipe"
+CREATE TABLE Recipes (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Description    TEXT            NOT NULL
+);
+
+-- Создание таблицы "Ingredient"
+CREATE TABLE Ingredients (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Name           TEXT            NOT NULL UNIQUE
+);
+
+-- Создание таблицы "Dessert"
+CREATE TABLE Desserts (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Name           TEXT            NOT NULL UNIQUE,
+    Calories       INTEGER         NOT NULL CHECK(Calories > 0) 
+);
+
+-- Создание таблицы "Cart"
+CREATE TABLE Carts (
+    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    UserId         INTEGER         NOT NULL UNIQUE REFERENCES Users (Id) ON DELETE CASCADE
+);
+
+-- Создание таблицы "User-Coupon"
+CREATE TABLE UsersCoupons (
+    CouponId       INTEGER         REFERENCES Coupon(Id) ON DELETE CASCADE,
+    UserId         INTEGER         REFERENCES User(Id) ON DELETE CASCADE,
+    
+    UNIQUE (CouponId, UserId)
+);
+
+-- Создание таблицы "Order-Drink"
+CREATE TABLE OrdersDrinks (
+    OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
+    DrinkId        INTEGER         REFERENCES Drink(Id) ON DELETE CASCADE,
+    
+    UNIQUE (OrderId, DrinkId)
+);
+
+-- Создание таблицы "Order-Dessert"
+CREATE TABLE OrdersDesserts (
+    OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
+    DessertId      INTEGER         REFERENCES Dessert(Id) ON DELETE CASCADE,
+    
+    UNIQUE (OrderId, DessertId)
+);
+
+-- Создание таблицы "Cart-Drink"
+CREATE TABLE CartsDrinks (
+    CartId         INTEGER         REFERENCES Cart(Id) ON DELETE CASCADE,
+    DrinkId        INTEGER         REFERENCES Drink(Id) ON DELETE CASCADE,
+    
+    UNIQUE (CartId, DrinkId)
+);
+
+-- Создание таблицы "Cart-Dessert"
+CREATE TABLE CartsDesserts (
+    CartId         INTEGER         REFERENCES Cart(Id) ON DELETE CASCADE,
+    DessertId      INTEGER         REFERENCES Dessert(Id) ON DELETE CASCADE,
+    
+    UNIQUE (CartId, DessertId)
+);
+
+-- Создание таблицы "Recipe-Ingredient"
+CREATE TABLE RecipesIngredients (
+    RecipeId       INTEGER         REFERENCES Recipe(Id) ON DELETE CASCADE,
+    IngredientId   INTEGER         REFERENCES Ingredient(Id) ON DELETE CASCADE,
+    
+    UNIQUE (RecipeId, IngredientId)
+);
