@@ -1,0 +1,30 @@
+SELECT Users.Name AS UserName, Orders.Date AS OrderDate, Drinks.Name AS DrinkName, Desserts.Name AS DessertName
+FROM Users
+JOIN Orders ON Users.Id = Orders.UserId
+LEFT JOIN OrdersDrinks ON Orders.Id = OrdersDrinks.OrderId
+LEFT JOIN Drinks ON OrdersDrinks.DrinkId = Drinks.Id
+LEFT JOIN OrdersDesserts ON Orders.Id = OrdersDesserts.OrderId
+LEFT JOIN Desserts ON OrdersDesserts.DessertId = Desserts.Id
+WHERE Users.Id = 1;
+
+
+SELECT Users.Name AS UserName, Coupons.Discount AS CouponDiscount
+FROM Users
+JOIN UsersCoupons ON Users.Id = UsersCoupons.UserId
+JOIN Coupons ON UsersCoupons.CouponId = Coupons.Id
+WHERE Coupons.DateOfEnd >= DATE('now');
+
+
+SELECT Users.Name AS UserName, COUNT(Orders.Id) AS OrderCount
+FROM Users
+LEFT JOIN Orders ON Users.Id = Orders.UserId
+GROUP BY Users.Name
+ORDER BY OrderCount DESC;
+
+
+SELECT Drinks.Name AS MostPopularDrink, COUNT(OrdersDrinks.DrinkId) AS OrderCount
+FROM Drinks
+LEFT JOIN OrdersDrinks ON Drinks.Id = OrdersDrinks.DrinkId
+GROUP BY Drinks.Name
+ORDER BY OrderCount DESC
+LIMIT 1;
