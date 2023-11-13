@@ -11,7 +11,7 @@ CREATE TABLE Users (
 CREATE TABLE Coupons (
     Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
     Discount       INTEGER         NOT NULL,
-    DateOfEnd      TEXT            NOT NULL CHECK (DateOfEnd >= DATE('now'))
+    DateOfEnd      TEXT            NOT NULL
 );
 
 -- Создание таблицы "Feedback"
@@ -27,7 +27,7 @@ CREATE TABLE Feedbacks (
 CREATE TABLE Orders (
     Id             INTEGER        PRIMARY KEY AUTOINCREMENT,
     Date           TIME           NOT NULL DEFAULT (DATETIME('now')),
-    UserId         INTEGER        REFERENCES User(Id) ON DELETE SET NULL
+    UserId         INTEGER        REFERENCES Users(Id) ON DELETE SET NULL
 );
 
 
@@ -37,8 +37,8 @@ CREATE TABLE Drinks (
     Name           TEXT            NOT NULL,
     Size           TEXT            NOT NULL CHECK (Size IN ('S', 'M', 'L')),
     Price          REAL            NOT NULL CHECK(Price > 0),
-    RecipeId       INTEGER         REFERENCES Recipe(Id) ON DELETE SET NULL,
-    CategoryId     INTEGER         REFERENCES Category(Id) ON DELETE SET NULL
+    RecipeId       INTEGER         REFERENCES Recipes(Id) ON DELETE SET NULL,
+    CategoryId     INTEGER         REFERENCES Categories(Id) ON DELETE SET NULL
 );
 -- Создание таблицы "Category"
 CREATE TABLE Categories (
@@ -73,8 +73,8 @@ CREATE TABLE Carts (
 
 -- Создание таблицы "User-Coupon"
 CREATE TABLE UsersCoupons (
-    CouponId       INTEGER         REFERENCES Coupon(Id) ON DELETE CASCADE,
-    UserId         INTEGER         REFERENCES User(Id) ON DELETE CASCADE,
+    CouponId       INTEGER         REFERENCES Coupons(Id) ON DELETE CASCADE,
+    UserId         INTEGER         REFERENCES Users(Id) ON DELETE CASCADE,
     
     UNIQUE (CouponId, UserId)
 );
@@ -82,7 +82,7 @@ CREATE TABLE UsersCoupons (
 -- Создание таблицы "Order-Drink"
 CREATE TABLE OrdersDrinks (
     OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
-    DrinkId        INTEGER         REFERENCES Drink(Id) ON DELETE CASCADE,
+    DrinkId        INTEGER         REFERENCES Drinks(Id) ON DELETE CASCADE,
     
     UNIQUE (OrderId, DrinkId)
 );
@@ -90,31 +90,31 @@ CREATE TABLE OrdersDrinks (
 -- Создание таблицы "Order-Dessert"
 CREATE TABLE OrdersDesserts (
     OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
-    DessertId      INTEGER         REFERENCES Dessert(Id) ON DELETE CASCADE,
+    DessertId      INTEGER         REFERENCES Desserts(Id) ON DELETE CASCADE,
     
     UNIQUE (OrderId, DessertId)
 );
 
 -- Создание таблицы "Cart-Drink"
 CREATE TABLE CartsDrinks (
-    CartId         INTEGER         REFERENCES Cart(Id) ON DELETE CASCADE,
-    DrinkId        INTEGER         REFERENCES Drink(Id) ON DELETE CASCADE,
+    CartId         INTEGER         REFERENCES Carts(Id) ON DELETE CASCADE,
+    DrinkId        INTEGER         REFERENCES Drinks(Id) ON DELETE CASCADE,
     
     UNIQUE (CartId, DrinkId)
 );
 
 -- Создание таблицы "Cart-Dessert"
 CREATE TABLE CartsDesserts (
-    CartId         INTEGER         REFERENCES Cart(Id) ON DELETE CASCADE,
-    DessertId      INTEGER         REFERENCES Dessert(Id) ON DELETE CASCADE,
+    CartId         INTEGER         REFERENCES Carts(Id) ON DELETE CASCADE,
+    DessertId      INTEGER         REFERENCES Desserts(Id) ON DELETE CASCADE,
     
     UNIQUE (CartId, DessertId)
 );
 
 -- Создание таблицы "Recipe-Ingredient"
 CREATE TABLE RecipesIngredients (
-    RecipeId       INTEGER         REFERENCES Recipe(Id) ON DELETE CASCADE,
-    IngredientId   INTEGER         REFERENCES Ingredient(Id) ON DELETE CASCADE,
+    RecipeId       INTEGER         REFERENCES Recipes(Id) ON DELETE CASCADE,
+    IngredientId   INTEGER         REFERENCES Ingredients(Id) ON DELETE CASCADE,
     
     UNIQUE (RecipeId, IngredientId)
 );
