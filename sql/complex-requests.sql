@@ -20,7 +20,7 @@ WHERE Users.Id = 1;
 
 SELECT Users.Name, Orders.Id AS OrderId
 FROM Users
-OUTER JOIN Orders ON Users.Id = Orders.UserId;
+LEFT JOIN Orders ON Users.Id = Orders.UserId;
 
 SELECT Categories.Name, COUNT(Drinks.Id) AS TotalDrinks
 FROM Categories
@@ -97,7 +97,7 @@ WHERE EXISTS (
 
 
 INSERT INTO Feedbacks (Date, Rating, UserId)
-SELECT DATETIME('now'), 5, Id
+SELECT CURRENT_DATE, 5, Id
 FROM Users
 WHERE Name = 'John';
 

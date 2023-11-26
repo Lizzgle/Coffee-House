@@ -9,13 +9,13 @@ INSERT INTO Coupons (Discount, DateOfEnd) VALUES
 
 
 INSERT INTO Feedbacks (Date, Rating, Description, UserId) VALUES
-    (DATETIME('now'), 5, 'Great service!', 1),
-    (DATETIME('now'), 4, 'Good food.', 2);
+    (CURRENT_DATE, 5, 'Great service!', 1),
+    (CURRENT_DATE, 4, 'Good food.', 2);
 
 
 INSERT INTO Orders (Date, UserId) VALUES
-    (DATETIME('now'), 1),
-    (DATETIME('now'), 2);
+    (CURRENT_DATE, 1),
+    (CURRENT_DATE, 2);
     
 INSERT INTO Categories (Name) VALUES
     ('Hot'),
@@ -65,4 +65,3 @@ INSERT INTO CartsDesserts (CartId, DessertId) VALUES
 INSERT INTO RecipesIngredients (RecipeId, IngredientId) VALUES
     (1, 1),
     (2, 2);
-

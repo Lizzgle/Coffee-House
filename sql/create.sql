@@ -1,77 +1,66 @@
--- Создание таблицы "User"
 CREATE TABLE Users (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     Login          TEXT            NOT NULL UNIQUE,
     Password       TEXT            NOT NULL,
     Name           TEXT            NOT NULL UNIQUE,
-    DateOfBirth    TEXT            NOT NULL
+    DateOfBirth    DATE            NOT NULL
 );
 
--- Создание таблицы "Coupon"
 CREATE TABLE Coupons (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     Discount       INTEGER         NOT NULL,
-    DateOfEnd      TEXT            NOT NULL
+    DateOfEnd      DATE            NOT NULL
 );
 
--- Создание таблицы "Feedback"
 CREATE TABLE Feedbacks (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
-    Date           TEXT            NOT NULL DEFAULT (DATETIME('now')),
+    Id             SERIAL          PRIMARY KEY,
+    Date           DATE            NOT NULL DEFAULT CURRENT_DATE,
     Rating         INTEGER         NOT NULL,
-    Description    TEXT(255),
+    Description    TEXT,
     UserId         INTEGER         REFERENCES Users (Id) ON DELETE SET NULL
 );
 
--- Создание таблицы "Order"
 CREATE TABLE Orders (
-    Id             INTEGER        PRIMARY KEY AUTOINCREMENT,
-    Date           TIME           NOT NULL DEFAULT (DATETIME('now')),
+    Id             SERIAL         PRIMARY KEY,
+    Date           DATE           NOT NULL DEFAULT CURRENT_DATE,
     UserId         INTEGER        REFERENCES Users(Id) ON DELETE SET NULL
 );
 
+CREATE TABLE Categories (
+    Id             SERIAL         PRIMARY KEY,
+    Name           TEXT           NOT NULL UNIQUE
+);
 
--- Создание таблицы "Drink"
+CREATE TABLE Recipes (
+    Id             SERIAL          PRIMARY KEY,
+    Description    TEXT            NOT NULL
+);
+
 CREATE TABLE Drinks (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     Name           TEXT            NOT NULL,
     Size           TEXT            NOT NULL CHECK (Size IN ('S', 'M', 'L')),
     Price          REAL            NOT NULL CHECK(Price > 0),
     RecipeId       INTEGER         REFERENCES Recipes(Id) ON DELETE SET NULL,
     CategoryId     INTEGER         REFERENCES Categories(Id) ON DELETE SET NULL
 );
--- Создание таблицы "Category"
-CREATE TABLE Categories (
-    Id             INTEGER        PRIMARY KEY AUTOINCREMENT,
-    Name           TEXT           NOT NULL UNIQUE
-);
 
--- Создание таблицы "Recipe"
-CREATE TABLE Recipes (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
-    Description    TEXT            NOT NULL
-);
-
--- Создание таблицы "Ingredient"
 CREATE TABLE Ingredients (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     Name           TEXT            NOT NULL UNIQUE
 );
 
--- Создание таблицы "Dessert"
 CREATE TABLE Desserts (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     Name           TEXT            NOT NULL UNIQUE,
     Calories       INTEGER         NOT NULL CHECK(Calories > 0) 
 );
 
--- Создание таблицы "Cart"
 CREATE TABLE Carts (
-    Id             INTEGER         PRIMARY KEY AUTOINCREMENT,
+    Id             SERIAL          PRIMARY KEY,
     UserId         INTEGER         NOT NULL UNIQUE REFERENCES Users (Id) ON DELETE CASCADE
 );
 
--- Создание таблицы "User-Coupon"
 CREATE TABLE UsersCoupons (
     CouponId       INTEGER         REFERENCES Coupons(Id) ON DELETE CASCADE,
     UserId         INTEGER         REFERENCES Users(Id) ON DELETE CASCADE,
@@ -79,7 +68,6 @@ CREATE TABLE UsersCoupons (
     UNIQUE (CouponId, UserId)
 );
 
--- Создание таблицы "Order-Drink"
 CREATE TABLE OrdersDrinks (
     OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
     DrinkId        INTEGER         REFERENCES Drinks(Id) ON DELETE CASCADE,
@@ -87,7 +75,6 @@ CREATE TABLE OrdersDrinks (
     UNIQUE (OrderId, DrinkId)
 );
 
--- Создание таблицы "Order-Dessert"
 CREATE TABLE OrdersDesserts (
     OrderId        INTEGER         REFERENCES Orders(Id) ON DELETE CASCADE,
     DessertId      INTEGER         REFERENCES Desserts(Id) ON DELETE CASCADE,
@@ -95,7 +82,6 @@ CREATE TABLE OrdersDesserts (
     UNIQUE (OrderId, DessertId)
 );
 
--- Создание таблицы "Cart-Drink"
 CREATE TABLE CartsDrinks (
     CartId         INTEGER         REFERENCES Carts(Id) ON DELETE CASCADE,
     DrinkId        INTEGER         REFERENCES Drinks(Id) ON DELETE CASCADE,
@@ -103,7 +89,6 @@ CREATE TABLE CartsDrinks (
     UNIQUE (CartId, DrinkId)
 );
 
--- Создание таблицы "Cart-Dessert"
 CREATE TABLE CartsDesserts (
     CartId         INTEGER         REFERENCES Carts(Id) ON DELETE CASCADE,
     DessertId      INTEGER         REFERENCES Desserts(Id) ON DELETE CASCADE,
@@ -111,7 +96,6 @@ CREATE TABLE CartsDesserts (
     UNIQUE (CartId, DessertId)
 );
 
--- Создание таблицы "Recipe-Ingredient"
 CREATE TABLE RecipesIngredients (
     RecipeId       INTEGER         REFERENCES Recipes(Id) ON DELETE CASCADE,
     IngredientId   INTEGER         REFERENCES Ingredients(Id) ON DELETE CASCADE,
