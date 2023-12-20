@@ -1,0 +1,89 @@
+User:
++ Id:           int           	<pk> 
++ Login:	varchar(64)
++ Password:     varchar(64)
++ Name:         varchar(64)
++ Date of birth	date
++ CouponId:			<fk -> Coupon>
+
+Coupon:	
++ Id:           int           	<pk> 	
++ Discount:	int
++ Date of end	date
+
+Feedback:
++ Id:           int           	<pk> 
++ UserId:			<fk -> User>
++ Date		date
++ Rating:	int
++ Discription:	varchar(255)
+
+Order:	
++ Id:           int           	<pk> 
++ UserId:			<fk -> User>
++ Date		date
++ DrinkId:			<fk -> Drink>
++ DessertId:			<fk -> Dessert>
+
+Drink:
++ Id:           int           	<pk> 
++ Name:         varchar(64)
++ Size:		char(1)
++ Recipe:			<fk -> Recipe>
++ CategoryId:			<fk -> Category>
+
+Category:
++ Id:           int           	<pk> 
++ Name:         varchar(255
+
+Recipe:
++ Id:           int           	<pk> 
++ Discription:	varchar(255)
++ IngredientId:			<fk -> Ingredient>
+
+Ingredient:
++ Id:           int           	<pk> 
++ Name:         varchar(64)
+
+Dessert:
++ Id:           int           	<pk> 
++ Name:         varchar(64)
++ Calories:	int
+
+Cart:
++ Id:           int           <pk>
++ UserId                      <fk -> User>     
+
+
+User-Coupon:
++ Id:           int           <pk> 
++ CouponId:                   <fk -> Coupon>
++ UserId:                     <fk -> User>
+
+Order-Drink:
++ Id:           int           <pk> 
++ OrderId:                    <fk -> Order>
++ DrinkId:                    <fk -> Drink>
+
+Order-Dessert:
++ Id:           int           <pk> 
++ OrderId:                    <fk -> Order>
++ DessertId:                  <fk -> Dessert>
+
+Cart-Drink:
++ Id:           int           <pk> 
++ CartId:                     <fk -> Cart>
++ DrinkId:                    <fk -> Drink>
+
+Cart-Dessert:
++ Id:           int           <pk> 
++ CartId:                     <fk -> Cart>
++ DessertId:                  <fk -> Dessert>
+
+Recipe-Ingredient:
++ Id:           int		<pk> 
++ RecipeId:			<fk -> Recipe>
++ IngredientId: 		<fk -> Ingredient>
+
+
+

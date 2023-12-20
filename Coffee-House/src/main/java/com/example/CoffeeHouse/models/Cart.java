@@ -14,7 +14,7 @@ public class Cart {
     private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "userId", referencedColumnName = "id", nullable = false)
+    @JoinColumn(name = "userId", referencedColumnName = "id")
     private User user;
 
     // Геттеры и сеттеры

@@ -15,7 +15,7 @@ public class Coupon {
     @Column(name = "Discount", nullable = false)
     private Integer discount;
 
-    @Column(name = "DateOfEnd", nullable = false)
+    @Column(name = "dateofend", nullable = false)
     private Date dateOfEnd;
 
     @ManyToMany(mappedBy = "coupons")

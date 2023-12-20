@@ -21,7 +21,7 @@ public class User {
     @Column(name = "Name", unique = true, nullable = false)
     private String name;
 
-    @Column(name = "DateOfBirth", nullable = false)
+    @Column(name = "DateOfBirth")
     private Date dateOfBirth;
 
     @ManyToMany
