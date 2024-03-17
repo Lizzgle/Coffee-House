@@ -1,0 +1,11 @@
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\bin\Debug\net7.0\Coffee.Domain.deps.json
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\bin\Debug\net7.0\Coffee.Domain.dll
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\bin\Debug\net7.0\Coffee.Domain.pdb
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.AssemblyInfoInputs.cache
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.AssemblyInfo.cs
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.csproj.CoreCompileInputs.cache
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.dll
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\refint\Coffee.Domain.dll
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\Coffee.Domain.pdb
+C:\bsuir\5sem\DB\Coffee\Coffee.Domain\obj\Debug\net7.0\ref\Coffee.Domain.dll

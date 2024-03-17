@@ -1,6 +1,6 @@
 Non-user -> Registrate
 
-Authorization -> User (Client / Moderator / Admin)
+Authorization -> User (Client / Admin)
 
 	Client:
 - add feedback about Coffee shop
@@ -8,9 +8,6 @@ Authorization -> User (Client / Moderator / Admin)
 - create order from products inside the cart
 - edit your own information
 
-	Moderator:
-- ban users
-
 	Admin:
-- CRUD all models
+- CRUD 1 model
 - edit role

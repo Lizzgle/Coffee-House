@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee", "Coffee\Coffee.csproj", "{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6F95E7CD-32C1-4BD3-9789-902200D22329} = {6F95E7CD-32C1-4BD3-9789-902200D22329}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coffee.Domain", "Coffee.Domain\Coffee.Domain.csproj", "{6F95E7CD-32C1-4BD3-9789-902200D22329}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F95E7CD-32C1-4BD3-9789-902200D22329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F95E7CD-32C1-4BD3-9789-902200D22329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F95E7CD-32C1-4BD3-9789-902200D22329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F95E7CD-32C1-4BD3-9789-902200D22329}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE578AE-28F8-4FFE-8D7D-AF2BDA8E3B85}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "YL3ig+7NsdOTbouywtuBKxMap2prUlC6Zxv/XRj8WJjHJDPJM/B97rwEt58ebq5TV6+xJowJZtMFVy3hBpHPXA==",
+  "success": true,
+  "projectFilePath": "C:\\bsuir\\5sem\\БД\\labs\\Coffee\\Coffee\\Coffee.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\lizag\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\lizag\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\lizag\\.nuget\\packages\\npgsql\\8.0.1\\npgsql.8.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

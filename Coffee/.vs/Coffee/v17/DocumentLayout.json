@@ -1,0 +1,309 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|solutionrelative:coffee\\requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|solutionrelative:coffee\\menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\dessert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\dessert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\base.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\drink.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee\\coffee.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|solutionrelative:coffee\\coffee.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F107A823-CEB7-4AC8-A491-BBD81F7EF64E}|Coffee\\Coffee.csproj|solutionrelative:coffee\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\abstractions\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\abstractions\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\abstractions\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\coupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\recipe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|c:\\bsuir\\5sem\\\u0431\u0434\\labs\\coffee\\coffee.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6F95E7CD-32C1-4BD3-9789-902200D22329}|Coffee.Domain\\Coffee.Domain.csproj|solutionrelative:coffee.domain\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Coffee.csproj",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Coffee.csproj",
+              "RelativeDocumentMoniker": "Coffee\\Coffee.csproj",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Coffee.csproj",
+              "RelativeToolTip": "Coffee\\Coffee.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-17T01:25:19.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Base.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Base.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Base.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Base.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Base.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Menu.cs",
+              "RelativeDocumentMoniker": "Coffee\\Menu.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Menu.cs",
+              "RelativeToolTip": "Coffee\\Menu.cs",
+              "ViewState": "AQIAANUBAAAAAAAAAIAwwOABAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Drink.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Drink.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Drink.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Drink.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Drink.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.979Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Abstractions\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Abstractions\\IUnitOfWork.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Abstractions\\IUnitOfWork.cs",
+              "RelativeToolTip": "Coffee.Domain\\Abstractions\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.982Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Order.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Order.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Order.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Order.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.984Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\User.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\User.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Requests.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Requests.cs",
+              "RelativeDocumentMoniker": "Coffee\\Requests.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Requests.cs",
+              "RelativeToolTip": "Coffee\\Requests.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAAOYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Feedback.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Feedback.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Feedback.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Feedback.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Cart.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Cart.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Cart.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Cart.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dessert.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Dessert.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Dessert.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Dessert.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Dessert.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAsAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Program.cs",
+              "RelativeDocumentMoniker": "Coffee\\Program.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee\\Program.cs",
+              "RelativeToolTip": "Coffee\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.996Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Abstractions\\IRepository.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Abstractions\\IRepository.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Abstractions\\IRepository.cs",
+              "RelativeToolTip": "Coffee.Domain\\Abstractions\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:19.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Coupon.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Coupon.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Coupon.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Coupon.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Coupon.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:20Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Ingredient.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Ingredient.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Ingredient.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Ingredient.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Ingredient.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:20.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Recipe.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Recipe.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Recipe.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Recipe.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Recipe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:20.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "Coffee.Domain\\Entities\\Category.cs",
+              "ToolTip": "C:\\bsuir\\5sem\\\u0411\u0414\\labs\\Coffee\\Coffee.Domain\\Entities\\Category.cs",
+              "RelativeToolTip": "Coffee.Domain\\Entities\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-17T01:25:20.007Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
